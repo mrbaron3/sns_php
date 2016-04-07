@@ -36,3 +36,6 @@ class Index extends \MyApp\Controller {
 //   }
 
 // }
+//OwCnA5j7qJz7FujQnCnR7v1qt3171z
+//http://click.poikore.jp/id/zmOJUinhcsPW1hYqRYKj7v1qt3171z100000.html
+//http://click.poikore.jp/id/Ubw360IabDnUnFrgwrbY7v1qt3171z100000.html

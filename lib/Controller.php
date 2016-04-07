@@ -6,19 +6,15 @@
 
  	private $_errors;
  	private $_values;
- 	protected $email;
- 	protected $password,
- 	protected $linkpass;
 
  	public function __construct(){
  		if(!isset($_SESSION['token'])){
  			$_SESSION['token'] = bin2hex(openssl_random_pseudo_bytes(16));
  		}
- 		$this->_errors 	= new \stdClass();
- 		$this->_values 	= new \stdClass();
- 		$this->email   	= $_POST['email'];
- 		$this->password = $_POST['password'];
- 		$this->linkpass = $_SESSION['token'];
+ 		$this->_errors = new \stdClass();
+ 		$this->_values = new \stdClass();
+
+
  	}
 
  	protected function setValues($key,$value){
@@ -46,4 +42,7 @@
  	public function me(){
  		return $this->isLoggedIn() ? $_SESSION['me']: null;
  	}
+
+
+ 
  }
